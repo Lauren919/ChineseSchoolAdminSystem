@@ -9,7 +9,7 @@ The project should follow the Agile methodology, using scrum events to appropria
 
 ## Sprint Breakdown
 ### Sprint 1 (30/11/2020)
-! [StartofSprint1](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%201.png)
+![StartofSprint1](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%201.png)
 I aim to have a complete database and start on building a three-tiered application with some interaction between the GUI layer and the database using the business layer.
 
 #### Sprint Goals
