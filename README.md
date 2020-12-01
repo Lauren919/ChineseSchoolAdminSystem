@@ -8,7 +8,7 @@ The project should follow the Agile methodology, using scrum events to appropria
 ## Class Diagram
 
 ## Sprint Breakdown
-### Sprint 1 (30/11/2020)
+### Sprint 1 (1/12/2020)
 ![StartofSprint1](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%201.png)
 I aim to have a complete database and start on building a three-tiered application with some interaction between the GUI layer and the database using the business layer.
 
@@ -26,3 +26,20 @@ The database was created with data inserted into each table. The business layer,
 
 #### Sprint Retrospective
 All the user stories for the sprint was completed. However, there were some issues with commiting to git that caused some issues but these were resolved. For the next sprint, the pacing should continue and there should be less issues with git now that I feel more confident with using git.
+
+### Sprint 2 (2/12/2020)
+![StartOfSprint2](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%202.png)
+I aim to create read and add methods to the Business layer and implement these in the GUI layer.
+
+#### Sprint Goals
+- [ ] User Story 1.1
+- [ ] User Story 2.1
+- [ ] User Story 3.1
+- [ ] User Story 3.1.1
+- [ ] User Story 3.4
+- [ ] User Story 3.4.1
+- [ ] Sprint review
+- [ ] Sprint retrospective
+- [ ] Update ReadMe file
+- [ ] commit all changes to github
+
