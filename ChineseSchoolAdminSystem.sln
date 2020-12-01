@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseSchoolAdminSystemBus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseSchoolAdminSystemTests", "ChineseSchoolAdminSystemTests\ChineseSchoolAdminSystemTests.csproj", "{E504755E-FF97-4DB7-BAA6-1B68DBD33741}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChineseSchoolAdminSystemGUI", "ChineseSchoolAdminSystemGUI\ChineseSchoolAdminSystemGUI.csproj", "{D44FE5BE-2DE4-46C7-B5E4-B6FECF640311}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E504755E-FF97-4DB7-BAA6-1B68DBD33741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E504755E-FF97-4DB7-BAA6-1B68DBD33741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E504755E-FF97-4DB7-BAA6-1B68DBD33741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44FE5BE-2DE4-46C7-B5E4-B6FECF640311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44FE5BE-2DE4-46C7-B5E4-B6FECF640311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44FE5BE-2DE4-46C7-B5E4-B6FECF640311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44FE5BE-2DE4-46C7-B5E4-B6FECF640311}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
