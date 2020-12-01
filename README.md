@@ -13,10 +13,16 @@ The project should follow the Agile methodology, using scrum events to appropria
 I aim to have a complete database and start on building a three-tiered application with some interaction between the GUI layer and the database using the business layer.
 
 #### Sprint Goals
-- [ ] User Story 0.1
-- [ ] User Story 0.2
-- [ ] User Story 0.3
-- [ ] Sprint review
-- [ ] Sprint retrospective
-- [ ] Update ReadMe file
-- [ ] commit all changes to github
+- [x] User Story 0.1
+- [x] User Story 0.2
+- [x] User Story 0.3
+- [x] Sprint review
+- [x] Sprint retrospective
+- [x] Update ReadMe file
+- [x] commit all changes to github
+
+#### Sprint Review
+The database was created with data inserted into each table. The business layer, unit tests and GUI layer were also added to the solution.
+
+#### Sprint Retrospective
+All the user stories for the sprint was completed. However, there were some issues with commiting to git that caused some issues but these were resolved. For the next sprint, the pacing should continue and there should be less issues with git now that I feel more confident with using git.
