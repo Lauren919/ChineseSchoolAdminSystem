@@ -31,5 +31,32 @@ namespace ChineseSchoolAdminSystemGUI
         {
             StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents();
         }
+
+        private void StudentListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+            if (StudentListBox.SelectedItem != null)
+            {
+                _crudManager.SetSelectedStudent(StudentListBox.SelectedItem);
+                PopulateStudentFields();
+            }
+        }
+
+        public void PopulateStudentFields()
+        {
+            if (_crudManager.SelectedStudent != null)
+            {
+                StudentIDTB.Text = _crudManager.SelectedStudent.StudentId.ToString();
+                FirstNameTB.Text = _crudManager.SelectedStudent.FirstName;
+                LastNameTB.Text = _crudManager.SelectedStudent.LastName;
+                AgeTB.Text = _crudManager.SelectedStudent.Age.ToString();
+                AllergiesTB.Text = _crudManager.SelectedStudent.Allergies;
+                ParentNameTB.Text = _crudManager.SelectedStudent.ParentName;
+                ParentContactNoTB.Text = _crudManager.SelectedStudent.ParentContactNumber;
+                ParentEmailTB.Text = _crudManager.SelectedStudent.ParentEmail;
+                ClassIDTB.Text = _crudManager.SelectedStudent.ClassId.ToString();
+            }
+        }
+
+
     }
 }

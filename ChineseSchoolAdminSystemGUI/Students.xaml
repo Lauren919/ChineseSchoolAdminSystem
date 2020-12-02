@@ -13,7 +13,25 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="StudentListBox"/>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="StudentListBox" SelectionChanged="StudentListBox_SelectionChanged"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </Grid>
+        
         <Grid Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -44,13 +62,14 @@
             
             <!--TextBoxes-->
             <TextBox x:Name="StudentIDTB" Grid.Column="1"/>
-            <TextBox/>
-            <TextBox/>
-            <TextBox/>
-            <TextBox/>
-            <TextBox/>
-            <TextBox/>
-            <TextBox/>
+            <TextBox x:Name="FirstNameTB" Grid.Row="1" Grid.Column="1"/>
+            <TextBox x:Name="LastNameTB" Grid.Row="2" Grid.Column="1"/>
+            <TextBox x:Name="AgeTB" Grid.Row="3" Grid.Column="1"/>
+            <TextBox x:Name="AllergiesTB" Grid.Row="4" Grid.Column="1"/>
+            <TextBox x:Name="ParentNameTB" Grid.Row="5" Grid.Column="1"/>
+            <TextBox x:Name="ParentContactNoTB" Grid.Row="6" Grid.Column="1"/>
+            <TextBox x:Name="ParentEmailTB" Grid.Row="7" Grid.Column="1"/>
+            <TextBox x:Name="ClassIDTB" Grid.Row="8" Grid.Column="1"/>
 
         </Grid>
 
