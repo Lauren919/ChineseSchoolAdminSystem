@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ChineseSchoolAdminSystem;
+using ChineseSchoolAdminSystemBusiness;
 
 namespace ChineseSchoolAdminSystemGUI
 {
@@ -18,9 +20,16 @@ namespace ChineseSchoolAdminSystemGUI
     /// </summary>
     public partial class Students : Page
     {
+        CRUDManager _crudManager = new CRUDManager();
         public Students()
         {
             InitializeComponent();
+            PopulateStudentListBox();
+        }
+
+        public void PopulateStudentListBox()
+        {
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents();
         }
     }
 }

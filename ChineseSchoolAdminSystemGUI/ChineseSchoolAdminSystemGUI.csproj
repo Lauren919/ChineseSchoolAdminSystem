@@ -6,4 +6,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChineseSchoolAdminSystemBusiness\ChineseSchoolAdminSystemBusiness.csproj" />
+    <ProjectReference Include="..\ChineseSchoolAdminSystem\ChineseSchoolAdminSystem.csproj" />
+  </ItemGroup>
+
 </Project>
