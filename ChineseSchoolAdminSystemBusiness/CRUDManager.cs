@@ -15,6 +15,8 @@ namespace ChineseSchoolAdminSystemBusiness
         public Student SelectedStudent { get; set; }
         public Teacher SelectedTeacher { get; set; }
 
+        public Class SelectedClass { get; set; }
+
 
         public void SetSelectedStudent(object selectedItem)
         {
@@ -26,6 +28,18 @@ namespace ChineseSchoolAdminSystemBusiness
             SelectedTeacher = (Teacher)selectedItem;
         }
 
+        public void SetSelectedClass(object selectedItem)
+        {
+            SelectedClass = (Class)selectedItem;
+        }
+
+        public List<Class> RetrieveAllClasses()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                return db.Classes.ToList();
+            }
+        }
 
         public List<Student> RetrieveAllStudents()
         {
