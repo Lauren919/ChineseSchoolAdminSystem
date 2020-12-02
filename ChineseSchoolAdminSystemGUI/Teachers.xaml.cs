@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,11 +14,11 @@ using System.Windows.Shapes;
 namespace ChineseSchoolAdminSystemGUI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Teachers.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class Teachers : Page
     {
-        public MainWindow()
+        public Teachers()
         {
             InitializeComponent();
         }
