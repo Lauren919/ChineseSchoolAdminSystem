@@ -51,9 +51,34 @@ namespace ChineseSchoolAdminSystemTests
         }
 
         [Test]
-        public void Test1()
+        public void NumberOfTeachersIncreasesBy1WhenNewTeacherIsAdded()
         {
-            Assert.Pass();
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                var numberOfTeachersBefore = db.Teachers.Count();
+                _crudManager.AddTeacher(5, "Alice", "Cheung", "ACheung@gmail.com");
+                var numberOfTeachersAfter = db.Teachers.Count();
+                Assert.AreEqual(numberOfTeachersAfter, numberOfTeachersBefore + 1);
+            }
+        }
+
+        [Test]
+        public void CheckAllInformationIsCorrectedWhenNewTeacherIsAdded()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                _crudManager.AddTeacher(5, "Alice", "Cheung", "ACheung@gmail.com");
+
+                var newTeacher = from t in db.Teachers
+                                 where t.TeacherId == 5
+                                 select t;
+                foreach (var s in newTeacher)
+                {
+                    Assert.AreEqual("Alice", s.FirstName);
+                    Assert.AreEqual("Cheung", s.LastName);
+                    Assert.AreEqual("ACheung@gmail.com", s.Email);
+                }
+            }
         }
     }
 }
