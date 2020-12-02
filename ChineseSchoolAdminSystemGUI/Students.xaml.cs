@@ -57,6 +57,15 @@ namespace ChineseSchoolAdminSystemGUI
             }
         }
 
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(StudentListBox.SelectedItem == null)
+            {
+                if (StudentIDTB.Text != null)
+                {
 
+                }
+            }
+        }
     }
 }
