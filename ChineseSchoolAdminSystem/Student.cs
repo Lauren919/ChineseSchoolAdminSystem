@@ -10,7 +10,6 @@ namespace ChineseSchoolAdminSystem
         public int StudentId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateOfBirth { get; set; }
         public int Age { get; set; }
         public string Allergies { get; set; }
         public string ParentName { get; set; }

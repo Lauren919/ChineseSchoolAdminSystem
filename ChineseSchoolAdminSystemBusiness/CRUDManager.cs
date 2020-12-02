@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace ChineseSchoolAdminSystemBusiness
 {
-    class CRUDManager
+    public class CRUDManager
     {
         static void Main(string[] args)
         {
@@ -44,7 +44,7 @@ namespace ChineseSchoolAdminSystemBusiness
         }
 
 
-        public void AddStudent (int studentID, string firstName, string lastName, DateTime dateOfBirth, int age, string allergies,
+        public void AddStudent (int studentID, string firstName, string lastName, int age, string allergies,
             string parentName, string parentContactNumber, string parentEmail, int classID)
         {
             using (var db = new ChineseSchoolAdminSystemContext())
@@ -54,7 +54,6 @@ namespace ChineseSchoolAdminSystemBusiness
                     StudentId = studentID,
                     FirstName = firstName,
                     LastName = lastName,
-                    DateOfBirth = dateOfBirth,
                     Age = age,
                     Allergies = allergies,
                     ParentName = parentName,

@@ -57,8 +57,6 @@ namespace ChineseSchoolAdminSystem
 
                 entity.Property(e => e.ClassId).HasColumnName("ClassID");
 
-                entity.Property(e => e.DateOfBirth).HasColumnType("date");
-
                 entity.Property(e => e.FirstName)
                     .IsRequired()
                     .HasMaxLength(20)
