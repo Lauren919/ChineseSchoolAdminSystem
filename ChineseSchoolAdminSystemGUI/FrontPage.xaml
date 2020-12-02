@@ -21,7 +21,7 @@
         <TextBox x:Name="Title" Background="{x:Null}" Grid.ColumnSpan="2" Width="600" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Coventry  Chinese School" FontSize="50" TextAlignment="Center"/>
 
         <Button x:Name="ToStudentPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Student" FontSize="25" Click="ToStudentPage_Click"/>
-        <Button x:Name="ToTeacherPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Teacher" FontSize="25" Grid.Column="1"/>
+        <Button x:Name="ToTeacherPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Teacher" FontSize="25" Grid.Column="1" Click="ToTeacherPage_Click"/>
 
     </Grid>
 </Page>

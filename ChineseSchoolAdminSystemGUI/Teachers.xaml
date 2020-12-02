@@ -9,6 +9,54 @@
       Title="Teachers">
 
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="TeacherListBox" SelectionChanged="TeacherListBox_SelectionChanged"/>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Labels-->
+            <Label x:Name="TeacherIDLabel" Content="Teacher ID:"/>
+            <Label x:Name="TFirstNameLabel" Content="First Name:" Grid.Row="1"/>
+            <Label x:Name="TLastNameLabel" Grid.Row="2" Content="Last Name:"/>
+            <Label x:Name="TeacherEmailLabel" Grid.Row="3" Content="Email:"/>
+
+            <!--TextBoxes-->
+            <TextBox x:Name="TeacherIDTB" Grid.Column="1"/>
+            <TextBox x:Name="TFirstNameTB" Grid.Row="1" Grid.Column="1"/>
+            <TextBox x:Name="TLastNameTB" Grid.Row="2" Grid.Column="1"/>
+            <TextBox x:Name="TeacherEmailTB" Grid.Row="3" Grid.Column="1"/>
+
+        </Grid>
+
     </Grid>
 </Page>

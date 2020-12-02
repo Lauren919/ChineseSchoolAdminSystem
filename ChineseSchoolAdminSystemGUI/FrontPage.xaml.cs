@@ -28,5 +28,11 @@ namespace ChineseSchoolAdminSystemGUI
             Students studentPage = new Students();
             NavigationService.Navigate(studentPage);
         }
+
+        private void ToTeacherPage_Click(object sender, RoutedEventArgs e)
+        {
+            Teachers teacherPage = new Teachers();
+            NavigationService.Navigate(teacherPage);
+        }
     }
 }
