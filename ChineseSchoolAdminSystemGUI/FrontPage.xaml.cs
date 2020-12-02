@@ -22,5 +22,11 @@ namespace ChineseSchoolAdminSystemGUI
         {
             InitializeComponent();
         }
+
+        private void ToStudentPage_Click(object sender, RoutedEventArgs e)
+        {
+            Students studentPage = new Students();
+            NavigationService.Navigate(studentPage);
+        }
     }
 }
