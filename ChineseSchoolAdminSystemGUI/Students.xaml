@@ -41,6 +41,16 @@
             <Label x:Name="ParentContactNoLabel" Grid.Row="6" Content="Parent Contact Number:"/>
             <Label x:Name="ParentEmailLabel" Grid.Row="7" Content="Parent Email:"/>
             <Label x:Name="ClassIDLabel" Grid.Row="8" Content="Class ID:"/>
+            
+            <!--TextBoxes-->
+            <TextBox x:Name="StudentIDTB" Grid.Column="1"/>
+            <TextBox/>
+            <TextBox/>
+            <TextBox/>
+            <TextBox/>
+            <TextBox/>
+            <TextBox/>
+            <TextBox/>
 
         </Grid>
 
