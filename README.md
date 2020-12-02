@@ -25,11 +25,11 @@ I aim to have a complete database and start on building a three-tiered applicati
 The database was created with data inserted into each table. The business layer, unit tests and GUI layer were also added to the solution.
 
 #### Sprint Retrospective
-All the user stories for the sprint was completed. However, there were some issues with commiting to git that caused some issues but these were resolved. For the next sprint, the pacing should continue and there should be less issues with git now that I feel more confident with using git.
+All the user stories for the sprint was completed. However, there were some issues with commiting to git but these were resolved. For the next sprint, the pacing should continue and there should be less issues with git now that I feel more confident with using git.
 
 ### Sprint 2 (2/12/2020)
 ![StartOfSprint2](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%202.png)
-I aim to create read and add methods to the Business layer and implement these in the GUI layer.
+I aim to create read and add methods to the Business layer and implement these in the GUI layer. Unit tests will also be carried out for the methods in the business layer.
 
 #### Sprint Goals
 - [ ] User Story 1.1
