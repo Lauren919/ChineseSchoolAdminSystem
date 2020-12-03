@@ -56,12 +56,33 @@ Although not all user stories were completed, the majority was which was good co
 I aim to implement the add method in the GUI layer and create the edit and delete methods in the Business layer.
 
 #### Sprint Goals
-- [ ] User Story 3.1
-- [ ] User Story 3.4
-- [ ] User Story 3.2.1
-- [ ] User Story 3.3.1
-- [ ] User Story 3.5.1
-- [ ] User Story 3.6.1
+- [x] User Story 3.1
+- [x] User Story 3.4
+- [x] User Story 3.2.1
+- [x] User Story 3.3.1
+- [x] User Story 3.5.1
+- [x] User Story 3.6.1
+- [x] Sprint review
+- [x] Sprint retrospective
+- [x] Update ReadMe file
+- [x] commit all changes to github
+
+#### Sprint Review
+All user stories were completed, including those that were not completed in Sprint 2. The GUI layer now can add new students and teachers. The edit and delete methods for students and teachers were also added to the business layer and tested. Although the test for the edit methods seem to fail, this is a technical issue and not an issue with the code itself as the dummy data is deleted from the database, as per the teardown method in the tests.
+
+#### Sprint Retrospective
+All the user stories were completed which is good as I was not feeling very well during the sprint. However, there was a problem with the tests for the edit methods which I will address in the next sprint. 
+
+
+### Sprint 4
+![StartOfSprint4](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%204.png)
+I aim to implement the edit and delete methods in the GUI layer for both the student and teacher pages.
+
+#### Sprint Goals
+- [ ] User Story 3.2
+- [ ] User Story 3.3
+- [ ] User Story 3.5
+- [ ] User Story 3.6
 - [ ] Sprint review
 - [ ] Sprint retrospective
 - [ ] Update ReadMe file
