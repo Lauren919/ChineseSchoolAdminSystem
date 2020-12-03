@@ -109,5 +109,28 @@ namespace ChineseSchoolAdminSystemTests
 
             }
         }
+
+        [Test]
+        public void NumberOfTeachersDecreasesBy1WhenTeacherisDeleted()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                var newTeacher = new Teacher
+                {
+                    TeacherId = 5,
+                    FirstName = "Jo",
+                    LastName = "Wong",
+                    Email = "JoWong@email.com"
+                };
+
+                db.Teachers.Add(newTeacher);
+                db.SaveChanges();
+
+                var numberOfTeachersBefore = db.Teachers.Count();
+                _crudManager.DeleteTeacher(5);
+                var numberOfTeachersAfter = db.Teachers.Count();
+                Assert.AreEqual(numberOfTeachersAfter, numberOfTeachersBefore - 1);
+            }
+        }
     }
 }

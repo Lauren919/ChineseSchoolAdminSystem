@@ -124,5 +124,33 @@ namespace ChineseSchoolAdminSystemTests
 
             }
         }
+
+        [Test]
+        public void NumberOfStudentsToDecreaseBy1WhenStudentIsDeleted()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                var newStudent = new Student
+                {
+                    StudentId = 7,
+                    FirstName = "Lauren",
+                    LastName = "Pang",
+                    Age = 22,
+                    Allergies = "N/A",
+                    ParentName = "Emy",
+                    ParentContactNumber = "07123123123",
+                    ParentEmail = "EChung@gmail.com",
+                    ClassId = 6
+                };
+
+                db.Students.Add(newStudent);
+                db.SaveChanges();
+
+                var numberOfStudentsBefore = db.Students.Count();
+                _crudManager.DeleteStudent(7);
+                var numberOfStudentsAfter = db.Students.Count();
+                Assert.AreEqual(numberOfStudentsAfter, numberOfStudentsBefore - 1);
+            }
+        }
     }
 }

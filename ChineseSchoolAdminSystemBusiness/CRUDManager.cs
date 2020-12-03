@@ -129,5 +129,25 @@ namespace ChineseSchoolAdminSystemBusiness
                 db.SaveChanges();
             }
         }
+
+        public void DeleteStudent(int studentID)
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                var selectedStudent = db.Students.Where(s => s.StudentId == studentID).FirstOrDefault();
+                db.Students.Remove(selectedStudent);
+                db.SaveChanges();
+            }
+        }
+
+        public void DeleteTeacher(int teacherID)
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                var selectedTeacher = db.Teachers.Where(s => s.TeacherId == teacherID).FirstOrDefault();
+                db.Teachers.Remove(selectedTeacher);
+                db.SaveChanges();
+            }
+        }
     }
 }
