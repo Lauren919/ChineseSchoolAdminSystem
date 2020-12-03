@@ -61,11 +61,29 @@ namespace ChineseSchoolAdminSystemGUI
         {
             if(StudentListBox.SelectedItem == null)
             {
-                if (StudentIDTB.Text != null)
-                {
+                var sID = int.Parse(StudentIDTB.Text);
+                var sFirstName = FirstNameTB.Text;
+                var sLastName = LastNameTB.Text;
+                var age = int.Parse(AgeTB.Text);
+                var allergies = AllergiesTB.Text;
+                var parentName = ParentNameTB.Text;
+                var parentContact = ParentContactNoTB.Text;
+                var parentEmail = ParentEmailTB.Text;
+                var classID = int.Parse(ClassIDTB.Text);
 
-                }
+                _crudManager.AddStudent(sID, sFirstName, sLastName, age, allergies, parentName, parentContact, parentEmail, classID);
             }
+
+            PopulateStudentListBox();
+            StudentIDTB.Clear();
+            FirstNameTB.Clear();
+            LastNameTB.Clear();
+            AgeTB.Clear();
+            AllergiesTB.Clear();
+            ParentNameTB.Clear();
+            ParentContactNoTB.Clear();
+            ParentEmailTB.Clear();
+            ClassIDTB.Clear();
         }
     }
 }
