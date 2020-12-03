@@ -52,5 +52,24 @@ namespace ChineseSchoolAdminSystemGUI
             }
         }
 
+        private void AddTeacherBT_Click(object sender, RoutedEventArgs e)
+        {
+            if (TeacherListBox.SelectedItem == null)
+            {
+                var iD = int.TryParse(TeacherIDTB.Text, out int tID);
+                var tFirstName = TFirstNameTB.Text;
+                var tLastName = TLastNameTB.Text;
+                var tEmail = TeacherEmailTB.Text;
+
+                _crudManager.AddTeacher(tID, tFirstName, tLastName, tEmail);
+            }
+
+            PopulateTeacherListBox();
+            TeacherIDTB.Clear();
+            TFirstNameTB.Clear();
+            TLastNameTB.Clear();
+            TeacherEmailTB.Clear();
+            
+        }
     }
 }

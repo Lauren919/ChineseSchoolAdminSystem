@@ -29,6 +29,9 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
+                
+                <!--Buttons-->
+                <Button x:Name="AddTeacherBT" Content="Add Teacher" FontSize="25" Click="AddTeacherBT_Click"/>
             </Grid>
         </Grid>
 
