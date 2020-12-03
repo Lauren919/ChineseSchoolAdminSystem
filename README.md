@@ -51,7 +51,7 @@ The add method for both the student and teacher was made and tested throughly. T
 Although not all user stories were completed, the majority was which was good considering I had some technical issues with Visual Studio. However, I did learn to use navigation windows in WPF and all unit tests for the add methods passed.
 
 
-### Spring 3 (3/12/2020)
+### Sprint 3 (3/12/2020)
 ![StartOfSprint3](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%203.png)
 I aim to implement the add method in the GUI layer and create the edit and delete methods in the Business layer.
 
