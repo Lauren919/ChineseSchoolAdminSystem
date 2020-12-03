@@ -62,6 +62,10 @@ namespace ChineseSchoolAdminSystemGUI
             if(StudentListBox.SelectedItem == null)
             {
                 var sID = int.TryParse(StudentIDTB.Text, out int studentID);
+                if (sID == false)
+                {
+                    MessageBox.Show("Invalid Entry. Please enter a valid number");
+                }
                 var sFirstName = FirstNameTB.Text;
                 var sLastName = LastNameTB.Text;
                 var age = int.TryParse(AgeTB.Text, out int sAge);
