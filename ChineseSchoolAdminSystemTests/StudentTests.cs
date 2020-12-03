@@ -3,6 +3,7 @@ using ChineseSchoolAdminSystemBusiness;
 using ChineseSchoolAdminSystem;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace ChineseSchoolAdminSystemTests
 {
@@ -37,7 +38,7 @@ namespace ChineseSchoolAdminSystemTests
             {
                 var selectedStudent =
                 from c in db.Students
-                where c.StudentId == 7
+                where c.FirstName == "Lauren"
                 select c;
 
 
@@ -83,6 +84,44 @@ namespace ChineseSchoolAdminSystemTests
                     Assert.AreEqual("EChung@gmail.com", s.ParentEmail);
                     Assert.AreEqual(6, s.ClassId);
                 }
+            }
+        }
+
+        [Test]
+        public void CheckAllInformationIsCorrectedWhenStudentInformationIsEdited()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext()) 
+            {
+                var newStudent = new Student
+                {
+                    StudentId = 7,
+                    FirstName = "Olivia",
+                    LastName = "Pang",
+                    Age = 22,
+                    Allergies = "N/A",
+                    ParentName = "Emy",
+                    ParentContactNumber = "07123123123",
+                    ParentEmail = "EChung@gmail.com",
+                    ClassId = 6
+                };
+
+                db.Students.Add(newStudent);
+                db.SaveChanges();
+
+                _crudManager.EditStudent(7, "Lauren", "Chu", 20, "Nuts", "Tony Chu", "07789778899", "TChu@email.com", 5);
+
+
+                var selectedStudent = db.Students.Where(s => s.StudentId == 7).FirstOrDefault();
+                Thread.Sleep(2000);
+                Assert.AreEqual("Lauren", selectedStudent.FirstName);
+                Assert.AreEqual("Chu", selectedStudent.LastName);
+                Assert.AreEqual(20, selectedStudent.Age);
+                Assert.AreEqual("Nuts", selectedStudent.Allergies);
+                Assert.AreEqual("Tony Chu", selectedStudent.ParentName);
+                Assert.AreEqual("07789778899", selectedStudent.ParentContactNumber);
+                Assert.AreEqual("TChu@gmail.com", selectedStudent.ParentEmail);
+                Assert.AreEqual(5, selectedStudent.ClassId);
+
             }
         }
     }

@@ -97,5 +97,37 @@ namespace ChineseSchoolAdminSystemBusiness
                 db.SaveChanges();
             }
         }
+
+        public void EditStudent (int studentID, string firstName, string lastName, int age, string allergies,
+            string parentName, string parentContactNumber, string parentEmail, int classID)
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                SelectedStudent = db.Students.Where(s => s.StudentId == studentID).FirstOrDefault();
+                SelectedStudent.FirstName = firstName;
+                SelectedStudent.LastName = lastName;
+                SelectedStudent.Age = age;
+                SelectedStudent.Allergies = allergies;
+                SelectedStudent.ParentName = parentName;
+                SelectedStudent.ParentContactNumber = parentContactNumber;
+                SelectedStudent.ParentEmail = parentEmail;
+                SelectedStudent.ClassId = classID;
+
+                db.SaveChanges();
+            }
+        }
+
+        public void EditTeacher(int teacherID, string firstName, string lastName, string email)
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                SelectedTeacher = db.Teachers.Where(t => t.TeacherId == teacherID).FirstOrDefault();
+                SelectedTeacher.FirstName = firstName;
+                SelectedTeacher.LastName = lastName;
+                SelectedTeacher.Email = email;
+
+                db.SaveChanges();
+            }
+        }
     }
 }

@@ -3,6 +3,7 @@ using ChineseSchoolAdminSystemBusiness;
 using ChineseSchoolAdminSystem;
 using System.Linq;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace ChineseSchoolAdminSystemTests
 {
@@ -78,6 +79,34 @@ namespace ChineseSchoolAdminSystemTests
                     Assert.AreEqual("Cheung", s.LastName);
                     Assert.AreEqual("ACheung@gmail.com", s.Email);
                 }
+            }
+        }
+
+        [Test]
+        public void CheckAllInformationIsCorrectedWhenStudentInformationIsEdited()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                var newTeacher = new Teacher
+                {
+                    TeacherId = 5,
+                    FirstName = "Jo",
+                    LastName = "Wong",
+                    Email = "JoWong@email.com"
+                };
+
+                db.Teachers.Add(newTeacher);
+                db.SaveChanges();
+
+                _crudManager.EditTeacher(5, "Alice", "Cheung", "ACheung@gmail,com");
+
+
+                var selectedTeacher = db.Teachers.Where(t => t.TeacherId == 5).FirstOrDefault();
+                Thread.Sleep(2000);
+                Assert.AreEqual("Alice", selectedTeacher.FirstName);
+                Assert.AreEqual("Cheung", selectedTeacher.LastName);
+                Assert.AreEqual("ACheung@gmail.com", selectedTeacher.Email);
+
             }
         }
     }
