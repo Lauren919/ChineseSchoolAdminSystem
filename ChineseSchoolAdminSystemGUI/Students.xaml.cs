@@ -115,10 +115,17 @@ namespace ChineseSchoolAdminSystemGUI
             PopulateStudentListBox();
         }
 
-        private void TeacherPageBT_Click(object sender, RoutedEventArgs e)
+        private void ResetBt_Click(object sender, RoutedEventArgs e)
         {
-            Teachers teacherPage = new Teachers();
-            NavigationService.Navigate(teacherPage);
+            StudentIDTB.Clear();
+            FirstNameTB.Clear();
+            LastNameTB.Clear();
+            AgeTB.Clear();
+            AllergiesTB.Clear();
+            ParentNameTB.Clear();
+            ParentContactNoTB.Clear();
+            ParentEmailTB.Clear();
+            ClassIDTB.Clear();
         }
     }
 }

@@ -71,5 +71,33 @@ namespace ChineseSchoolAdminSystemGUI
             TeacherEmailTB.Clear();
             
         }
+
+        private void EditTeacherBt_Click(object sender, RoutedEventArgs e)
+        {
+            _crudManager.EditTeacher(int.Parse(TeacherIDTB.Text), TFirstNameTB.Text, TLastNameTB.Text, TeacherEmailTB.Text);
+            TeacherListBox.ItemsSource = null;
+            PopulateTeacherListBox();
+            TeacherListBox.SelectedItem = _crudManager.SelectedTeacher;
+            PopulateTeacherFields();
+        }
+
+        private void DeleteTeacherBt_Click(object sender, RoutedEventArgs e)
+        {
+            _crudManager.DeleteTeacher(int.Parse(TeacherIDTB.Text));
+            TeacherIDTB.Clear();
+            TFirstNameTB.Clear();
+            TLastNameTB.Clear();
+            TeacherEmailTB.Clear();
+            PopulateTeacherListBox();
+
+        }
+
+        private void ResetBt_Click(object sender, RoutedEventArgs e)
+        {
+            TeacherIDTB.Clear();
+            TFirstNameTB.Clear();
+            TLastNameTB.Clear();
+            TeacherEmailTB.Clear();
+        }
     }
 }
