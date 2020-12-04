@@ -79,12 +79,19 @@ All the user stories were completed which is good as I was not feeling very well
 I aim to implement the edit and delete methods in the GUI layer for both the student and teacher pages.
 
 #### Sprint Goals
-- [ ] User Story 3.2
-- [ ] User Story 3.3
-- [ ] User Story 3.5
-- [ ] User Story 3.6
-- [ ] Sprint review
-- [ ] Sprint retrospective
-- [ ] Update ReadMe file
-- [ ] commit all changes to github
+- [x] User Story 3.2
+- [x] User Story 3.3
+- [x] User Story 3.5
+- [x] User Story 3.6
+- [x] User Story 4.1
+- [x] Sprint review
+- [x] Sprint retrospective
+- [x] Update ReadMe file
+- [x] commit all changes to github
+
+#### Sprint Review
+All user stories were completed, with an extra one added (User Story 4.2 - Show students in selected class) as I finished all planned user stories early. The edit and delete methods for both the student and teacher were implemented into the GUI, with manual tests completed. Also, the student page was changed to contain an extra list box, showing all the classes. When a class is selected, all students within that class will be listed in the second listbox below.
+
+#### Sprint Retrospective
+This sprint ran smoothly as all user stories originally planned were completed early, meaning that I was able to add another user story to work on during the sprint. 
 
