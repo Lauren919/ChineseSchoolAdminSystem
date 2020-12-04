@@ -6,6 +6,7 @@ The application should be a three-tiered system, meaning there should be a GUI l
 The project should follow the Agile methodology, using scrum events to appropriately plan for each sprint.
 
 ## Class Diagram
+![ClassDiagram](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Class%20Diagram.png)
 
 ## Sprint Breakdown
 ### Sprint 1 (1/12/2020)
@@ -13,9 +14,9 @@ The project should follow the Agile methodology, using scrum events to appropria
 I aim to have a complete database and start on building a three-tiered application with some interaction between the GUI layer and the database using the business layer.
 
 #### Sprint Goals
-- [x] User Story 0.1
-- [x] User Story 0.2
-- [x] User Story 0.3
+- [x] User Story 0.1 - Build a database
+- [x] User Story 0.2 - Build WPF front end
+- [x] User Story 0.3 - Build Business layer
 - [x] Sprint review
 - [x] Sprint retrospective
 - [x] Update ReadMe file
@@ -33,12 +34,12 @@ All the user stories for the sprint was completed. However, there were some issu
 I aim to create read and add methods to the Business layer and implement these in the GUI layer. Unit tests will also be carried out for the methods in the business layer.
 
 #### Sprint Goals
-- [x] User Story 1.1
-- [x] User Story 2.1
-- [ ] User Story 3.1
-- [x] User Story 3.1.1
-- [ ] User Story 3.4
-- [x] User Story 3.4.1
+- [x] User Story 1.1 - Read student information
+- [x] User Story 2.1 - Read teacher information
+- [ ] User Story 3.1 - Add new student in GUI
+- [x] User Story 3.1.1 - Create method to add new student 
+- [ ] User Story 3.4 - Add new teacher in GUI
+- [x] User Story 3.4.1 - Create method to add new teacher
 - [x] Sprint review
 - [x] Sprint retrospective
 - [x] Update ReadMe file
@@ -56,12 +57,12 @@ Although not all user stories were completed, the majority was which was good co
 I aim to implement the add method in the GUI layer and create the edit and delete methods in the Business layer.
 
 #### Sprint Goals
-- [x] User Story 3.1
-- [x] User Story 3.4
-- [x] User Story 3.2.1
-- [x] User Story 3.3.1
-- [x] User Story 3.5.1
-- [x] User Story 3.6.1
+- [x] User Story 3.1 - Add new student in GUI
+- [x] User Story 3.4 - Add new teacher in GUI
+- [x] User Story 3.2.1 - Create a method to edit a student
+- [x] User Story 3.3.1 - Create a method to delete a student
+- [x] User Story 3.5.1 - Create a method to edit a teacher
+- [x] User Story 3.6.1 - Create a method to delete a student
 - [x] Sprint review
 - [x] Sprint retrospective
 - [x] Update ReadMe file
@@ -79,11 +80,11 @@ All the user stories were completed which is good as I was not feeling very well
 I aim to implement the edit and delete methods in the GUI layer for both the student and teacher pages.
 
 #### Sprint Goals
-- [x] User Story 3.2
-- [x] User Story 3.3
-- [x] User Story 3.5
-- [x] User Story 3.6
-- [x] User Story 4.1
+- [x] User Story 3.2 - Edit student information on GUI
+- [x] User Story 3.3 - Delete student on GUI
+- [x] User Story 3.5 - Edit teacher information on GUI
+- [x] User Story 3.6 - Delete teacher on GUI
+- [x] User Story 4.1 - Show students in selected class on GUI
 - [x] Sprint review
 - [x] Sprint retrospective
 - [x] Update ReadMe file
