@@ -89,5 +89,14 @@ namespace ChineseSchoolAdminSystemGUI
             ParentEmailTB.Clear();
             ClassIDTB.Clear();
         }
+
+        private void EditBt_Click(object sender, RoutedEventArgs e)
+        {
+            _crudManager.EditStudent(int.Parse(StudentIDTB.Text), FirstNameTB.Text, LastNameTB.Text, int.Parse(AgeTB.Text), AllergiesTB.Text, ParentNameTB.Text, ParentContactNoTB.Text, ParentEmailTB.Text, int.Parse(ClassIDTB.Text));
+            StudentListBox.ItemsSource = null;
+            PopulateStudentListBox();
+            StudentListBox.SelectedItem = _crudManager.SelectedStudent;
+            PopulateStudentFields();
+        }
     }
 }
