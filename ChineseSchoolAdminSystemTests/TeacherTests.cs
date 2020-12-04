@@ -38,7 +38,7 @@ namespace ChineseSchoolAdminSystemTests
             {
                 var selectedTeacher =
                 from c in db.Teachers
-                where c.TeacherId == 5
+                where c.FirstName == "Alice"
                 select c;
 
 
@@ -83,7 +83,7 @@ namespace ChineseSchoolAdminSystemTests
         }
 
         [Test]
-        public void CheckAllInformationIsCorrectedWhenStudentInformationIsEdited()
+        public void CheckAllInformationIsCorrectedWhenTeacherInformationIsEdited()
         {
             using (var db = new ChineseSchoolAdminSystemContext())
             {

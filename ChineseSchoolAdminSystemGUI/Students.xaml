@@ -32,6 +32,9 @@
                 
                 <!--Buttons-->
                 <Button x:Name="AddButton" Content="Add Student" FontSize="25" Click="AddButton_Click"/>
+                <Button x:Name="EditBt" Grid.Column="1" Content="Edit Student" FontSize="25"/>
+                <Button x:Name="DeleteBt" Grid.Row="1" Grid.Column="1" FontSize="25" Content="Delete Student"/>
+                <Button x:Name="ReturnBT" Grid.Row="1" FontSize="25" Content="Return To Home"/>
             </Grid>
         </Grid>
         
