@@ -18,7 +18,16 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <ListBox x:Name="StudentListBox" SelectionChanged="StudentListBox_SelectionChanged"/>
+            
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <ListBox x:Name="ClassListBox" SelectionChanged="ClassListBox_SelectionChanged"/>
+                <ListBox x:Name="StudentListBox" SelectionChanged="StudentListBox_SelectionChanged" Grid.Row="1"/>
+                
+            </Grid>
 
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>

@@ -41,11 +41,75 @@ namespace ChineseSchoolAdminSystemBusiness
             }
         }
 
-        public List<Student> RetrieveAllStudents()
+        public List<Student> RetrieveAllStudentsinMandarinBeginner()
         {
             using (var db = new ChineseSchoolAdminSystemContext())
             {
-                return db.Students.ToList();
+                return (from s in db.Students
+                        join c in db.Classes on s.ClassId equals c.ClassId
+                        where s.ClassId == 1
+                        select s).ToList();
+
+            }
+        }
+
+        public List<Student> RetrieveAllStudentsinMandarinIntermediate()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                return (from s in db.Students
+                        join c in db.Classes on s.ClassId equals c.ClassId
+                        where s.ClassId == 2
+                        select s).ToList();
+
+            }
+        }
+
+        public List<Student> RetrieveAllStudentsinMandarinAdvance()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                return (from s in db.Students
+                        join c in db.Classes on s.ClassId equals c.ClassId
+                        where s.ClassId == 3
+                        select s).ToList();
+
+            }
+        }
+
+        public List<Student> RetrieveAllStudentsinCantoneseBeginner()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                return (from s in db.Students
+                        join c in db.Classes on s.ClassId equals c.ClassId
+                        where s.ClassId == 4
+                        select s).ToList();
+
+            }
+        }
+
+        public List<Student> RetrieveAllStudentsinCantoneseIntermediate()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                return (from s in db.Students
+                        join c in db.Classes on s.ClassId equals c.ClassId
+                        where s.ClassId == 5
+                        select s).ToList();
+
+            }
+        }
+
+        public List<Student> RetrieveAllStudentsinCantoneseAdvance()
+        {
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
+                return (from s in db.Students
+                        join c in db.Classes on s.ClassId equals c.ClassId
+                        where s.ClassId == 6
+                        select s).ToList();
+
             }
         }
 
