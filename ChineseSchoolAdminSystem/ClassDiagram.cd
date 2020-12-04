@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ChineseSchoolAdminSystem.Class">
+    <Position X="7.25" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAgAACAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClassCustomisation\Class.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Teacher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChineseSchoolAdminSystem.Student">
+    <Position X="3.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAgAAAAAAAEBFIAAABAAAAAAAAAAAAAAAACAAg=</HashCode>
+      <FileName>ClassCustomisation\Student.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Class" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChineseSchoolAdminSystem.Teacher">
+    <Position X="11.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAEAAAACAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>ClassCustomisation\Teacher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChineseSchoolAdminSystem.ChineseSchoolAdminSystemContext">
+    <Position X="8.75" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAQEQAAAAAAAAAAAAEAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ChineseSchoolAdminSystemContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
