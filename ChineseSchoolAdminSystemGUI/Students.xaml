@@ -18,15 +18,15 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
+
             <Grid Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <ListBox x:Name="ClassListBox" SelectionChanged="ClassListBox_SelectionChanged"/>
-                <ListBox x:Name="StudentListBox" SelectionChanged="StudentListBox_SelectionChanged" Grid.Row="1"/>
-                
+                <ListBox x:Name="ClassListBox" SelectionChanged="ClassListBox_SelectionChanged" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5"/>
+                <ListBox x:Name="StudentListBox" SelectionChanged="StudentListBox_SelectionChanged" Grid.Row="1" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5"/>
+
             </Grid>
 
             <Grid Grid.Row="1">
@@ -38,15 +38,15 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                
+
                 <!--Buttons-->
-                <Button x:Name="AddButton" Content="Add Student" FontSize="25" Click="AddButton_Click"/>
-                <Button x:Name="EditBt" Grid.Column="1" Content="Edit Student" FontSize="25" Height="75" VerticalAlignment="Top" Click="EditBt_Click"/>
-                <Button x:Name="DeleteBt" Grid.Row="1" Grid.Column="1" FontSize="25" Content="Delete Student" Height="75" VerticalAlignment="Top" Click="DeleteBt_Click"/>
-                <Button x:Name="ResetBt" Grid.Row="1" FontSize="25" Content="Reset" Click="ResetBt_Click"/>
+                <Button x:Name="AddButton" Content="Add Student" FontSize="25" Click="AddButton_Click" Background="White" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+                <Button x:Name="EditBt" Grid.Column="1" Content="Edit Student" FontSize="25" Height="75" VerticalAlignment="Stretch" Click="EditBt_Click" Background="White" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+                <Button x:Name="DeleteBt" Grid.Row="1" Grid.Column="1" FontSize="25" Content="Delete Student" Height="75" VerticalAlignment="Stretch" Click="DeleteBt_Click" Background="White" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+                <Button x:Name="ResetBt" Grid.Row="1" FontSize="25" Content="Reset" Click="ResetBt_Click" Background="White" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
             </Grid>
         </Grid>
-        
+
         <Grid Grid.Column="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -63,28 +63,28 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            
+
             <!--Labels-->
-            <Label x:Name="StudentIDLabel" Content="Student ID:"/>
-            <Label x:Name="FirstNameLabel" Content="First Name:" Grid.Row="1"/>
-            <Label x:Name="LastNameLabel" Grid.Row="2" Content="Last Name:"/>
-            <Label x:Name="AgeLabel" Grid.Row="3" Content="Age:"/>
-            <Label x:Name="AllergiesLabel" Grid.Row="4" Content="Allergies:"/>
-            <Label x:Name="ParentNameLabel" Grid.Row="5" Content="Parent Full Name:"/>
-            <Label x:Name="ParentContactNoLabel" Grid.Row="6" Content="Parent Contact Number:"/>
-            <Label x:Name="ParentEmailLabel" Grid.Row="7" Content="Parent Email:"/>
-            <Label x:Name="ClassIDLabel" Grid.Row="8" Content="Class ID:"/>
-            
+            <Label x:Name="StudentIDLabel" Content="Student ID:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="FirstNameLabel" Content="First Name:" Grid.Row="1" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="LastNameLabel" Grid.Row="2" Content="Last Name:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="AgeLabel" Grid.Row="3" Content="Age:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="AllergiesLabel" Grid.Row="4" Content="Allergies:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="ParentNameLabel" Grid.Row="5" Content="Parent Full Name:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="ParentContactNoLabel" Grid.Row="6" Content="Parent Contact No:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="ParentEmailLabel" Grid.Row="7" Content="Parent Email:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="ClassIDLabel" Grid.Row="8" Content="Class ID:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+
             <!--TextBoxes-->
-            <TextBox x:Name="StudentIDTB" Grid.Column="1"/>
-            <TextBox x:Name="FirstNameTB" Grid.Row="1" Grid.Column="1"/>
-            <TextBox x:Name="LastNameTB" Grid.Row="2" Grid.Column="1"/>
-            <TextBox x:Name="AgeTB" Grid.Row="3" Grid.Column="1"/>
-            <TextBox x:Name="AllergiesTB" Grid.Row="4" Grid.Column="1"/>
-            <TextBox x:Name="ParentNameTB" Grid.Row="5" Grid.Column="1"/>
-            <TextBox x:Name="ParentContactNoTB" Grid.Row="6" Grid.Column="1"/>
-            <TextBox x:Name="ParentEmailTB" Grid.Row="7" Grid.Column="1"/>
-            <TextBox x:Name="ClassIDTB" Grid.Row="8" Grid.Column="1"/>
+            <TextBox x:Name="StudentIDTB" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="FirstNameTB" Grid.Row="1" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="LastNameTB" Grid.Row="2" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="AgeTB" Grid.Row="3" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="AllergiesTB" Grid.Row="4" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="ParentNameTB" Grid.Row="5" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="ParentContactNoTB" Grid.Row="6" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="ParentEmailTB" Grid.Row="7" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+            <TextBox x:Name="ClassIDTB" Grid.Row="8" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
 
         </Grid>
 
