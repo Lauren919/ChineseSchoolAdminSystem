@@ -18,7 +18,7 @@ namespace ChineseSchoolAdminSystemTests
             {
                 var selectedStudent =
                 from c in db.Students
-                where c.StudentId == 7
+                where c.FirstName == "Lauren"
                 select c;
 
 

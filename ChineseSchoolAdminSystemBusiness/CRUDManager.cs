@@ -11,13 +11,13 @@ namespace ChineseSchoolAdminSystemBusiness
         {
            
         }
-
+        //Properties
         public Student SelectedStudent { get; set; }
         public Teacher SelectedTeacher { get; set; }
-
         public Class SelectedClass { get; set; }
 
 
+        //Methods
         public void SetSelectedStudent(object selectedItem)
         {
             SelectedStudent = (Student)selectedItem;
