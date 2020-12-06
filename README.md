@@ -75,7 +75,7 @@ All user stories were completed, including those that were not completed in Spri
 All the user stories were completed which is good as I was not feeling very well during the sprint. However, there was a problem with the tests for the edit methods which I will address in the next sprint. 
 
 
-### Sprint 4
+### Sprint 4 (4/12/2020)
 ![StartOfSprint4](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%204.png)
 I aim to implement the edit and delete methods in the GUI layer for both the student and teacher pages.
 
@@ -95,4 +95,24 @@ All user stories were completed, with an extra one added (User Story 4.2 - Show 
 
 #### Sprint Retrospective
 This sprint ran smoothly as all user stories originally planned were completed early, meaning that I was able to add another user story to work on during the sprint. 
+
+
+### Sprint 5 (5/12/2020)
+![StartOfSprint5](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%205.png)
+I aim to make the WPF easier to use and look aesthetically pleasing to the eye.
+
+#### Sprint Goals
+- [x] User Story 5.1 - Make WPF easy to use
+- [x] User Story 5.2 - Make WPF aesthetically pleasing to the eye
+- [x] Sprint review
+- [x] Sprint retrospective
+- [x] Update ReadMe file
+- [x] commit all changes to github
+
+#### Sprint Review
+All user stories were completed to make the application easier to use and look nice. Manual testing was used to make sure the application still functioned properly after the changes were made.
+
+#### Sprint Retrospective
+All user stories were done within the sprint and was tested to make sure the application still worked after the design changes. 
+
 
