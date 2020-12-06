@@ -52,10 +52,10 @@
             </Grid.RowDefinitions>
 
             <!--Labels-->
-            <Label x:Name="TeacherIDLabel" Content="Teacher ID:" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White"/>
-            <Label x:Name="TFirstNameLabel" Content="First Name:" Grid.Row="1" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White"/>
-            <Label x:Name="TLastNameLabel" Grid.Row="2" Content="Last Name:" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White"/>
-            <Label x:Name="TeacherEmailLabel" Grid.Row="3" Content="Email:" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White"/>
+            <Label x:Name="TeacherIDLabel" Content="Teacher ID:" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White" FontSize="18"/>
+            <Label x:Name="TFirstNameLabel" Content="First Name:" Grid.Row="1" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White" FontSize="18"/>
+            <Label x:Name="TLastNameLabel" Grid.Row="2" Content="Last Name:" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White" FontSize="18"/>
+            <Label x:Name="TeacherEmailLabel" Grid.Row="3" Content="Email:" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" Background="White" FontSize="18"/>
 
             <!--TextBoxes-->
             <TextBox x:Name="TeacherIDTB" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>

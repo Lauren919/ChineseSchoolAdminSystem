@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ChineseSchoolAdminSystemGUI"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="FrontPage" Background="#FF296ECE">
+      Title="FrontPage" Background="#0474bc">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -18,10 +18,11 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <TextBox x:Name="Title" Background="{x:Null}" Grid.ColumnSpan="2" Width="600" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Coventry  Chinese School" FontSize="50" TextAlignment="Center"/>
+        <TextBox x:Name="Title" Background="{x:Null}" Grid.ColumnSpan="2" Width="600" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Coventry  Chinese School" FontSize="50" TextAlignment="Center" BorderBrush="{x:Null}" Foreground="White" />
 
-        <Button x:Name="ToStudentPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Student" FontSize="25" Click="ToStudentPage_Click" Background="#FF296ECE" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
-        <Button x:Name="ToTeacherPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Teacher" FontSize="25" Grid.Column="1" Click="ToTeacherPage_Click" Background="#FF296ECE" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
+        <Button x:Name="ToStudentPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Student" FontSize="25" Click="ToStudentPage_Click" Background="#0474bc" BorderThickness="5,5,5,5" BorderBrush="#FFE61616" Foreground="White" />
+        <Button x:Name="ToTeacherPage" Height="50" Width="100" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Teacher" FontSize="25" Grid.Column="1" Click="ToTeacherPage_Click" Background="#0474bc" BorderThickness="5,5,5,5" BorderBrush="#FFE61616" Foreground="White" />
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="166" Margin="320,162,0,0" VerticalAlignment="Top" Width="160" Source="/logo.png" Grid.RowSpan="2"/>
 
     </Grid>
 </Page>
