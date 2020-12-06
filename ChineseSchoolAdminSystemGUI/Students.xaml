@@ -65,15 +65,15 @@
             </Grid.RowDefinitions>
 
             <!--Labels-->
-            <Label x:Name="StudentIDLabel" Content="Student ID:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="FirstNameLabel" Content="First Name:" Grid.Row="1" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="LastNameLabel" Grid.Row="2" Content="Last Name:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="AgeLabel" Grid.Row="3" Content="Age:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="AllergiesLabel" Grid.Row="4" Content="Allergies:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="ParentNameLabel" Grid.Row="5" Content="Parent Full Name:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="StudentIDLabel" Content="Student ID:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
+            <Label x:Name="FirstNameLabel" Content="First Name:" Grid.Row="1" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
+            <Label x:Name="LastNameLabel" Grid.Row="2" Content="Last Name:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
+            <Label x:Name="AgeLabel" Grid.Row="3" Content="Age:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
+            <Label x:Name="AllergiesLabel" Grid.Row="4" Content="Allergies:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
+            <Label x:Name="ParentNameLabel" Grid.Row="5" Content="Parent Full Name:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
             <Label x:Name="ParentContactNoLabel" Grid.Row="6" Content="Parent Contact No:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="ParentEmailLabel" Grid.Row="7" Content="Parent Email:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
-            <Label x:Name="ClassIDLabel" Grid.Row="8" Content="Class ID:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="20"/>
+            <Label x:Name="ParentEmailLabel" Grid.Row="7" Content="Parent Email:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
+            <Label x:Name="ClassIDLabel" Grid.Row="8" Content="Class ID:" Background="White" BorderBrush="#FF296ECE" BorderThickness="5,5,5,5" FontSize="18"/>
 
             <!--TextBoxes-->
             <TextBox x:Name="StudentIDTB" Grid.Column="1" BorderThickness="5,5,5,5" BorderBrush="#FFE61616"/>
