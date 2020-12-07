@@ -122,4 +122,10 @@ All user stories were completed to make the application easier to use and look n
 #### Sprint Retrospective
 All user stories were done within the sprint and was tested to make sure the application still worked after the design changes. 
 
+## Project Review
+The minimum viable product was achieved, meaning the project can be considered as successful. There is one user story left in the project backlog which should be completed for the application to work at its full potential. All but 2 unit tests passed but manual testing was used for the unit tests that didn't pass to ensure that the method worked correctly. The GUI was also manually tested to ensure that it works. All scrum events have been documented onto this README file.
+
+## Project Retrospective
+Overall, I think that the project went well. I had a few issues with using github at the start of the project but this was quickly resolved. Also, I am happy that I planned out my sprints well so that for the majority of the sprints I was able to complete all the user stories that I had set out to do. I also kept up with updating the README with all the sprint documentation, which helped me keep track of how I was progressing throughout the project.
+
 
