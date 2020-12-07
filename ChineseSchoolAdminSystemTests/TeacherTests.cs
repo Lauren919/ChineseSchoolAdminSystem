@@ -38,7 +38,7 @@ namespace ChineseSchoolAdminSystemTests
             {
                 var selectedTeacher =
                 from c in db.Teachers
-                where c.FirstName == "Alice"
+                where c.TeacherId == 5
                 select c;
 
 
