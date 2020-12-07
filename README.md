@@ -8,6 +8,13 @@ The project should follow the Agile methodology, using scrum events to appropria
 ## Class Diagram
 ![ClassDiagram](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Class%20Diagram.png)
 
+## WPF
+![FrontPageWPF](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Front%20Page.png)
+
+![StudentPageWPF](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Student%20Page.png)
+
+![TeacherPageWPF](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Teacher%20Page.png)
+
 ## Sprint Breakdown
 ### Sprint 1 (1/12/2020)
 ![StartofSprint1](https://github.com/Lauren919/ChineseSchoolAdminSystem/blob/main/Project%20Images/Sprint%201.png)
