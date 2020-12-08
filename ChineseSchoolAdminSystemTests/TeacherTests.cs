@@ -97,10 +97,12 @@ namespace ChineseSchoolAdminSystemTests
 
                 db.Teachers.Add(newTeacher);
                 db.SaveChanges();
+            }
 
-                _crudManager.EditTeacher(5, "Alice", "Cheung", "ACheung@gmail,com");
+             _crudManager.EditTeacher(5, "Alice", "Cheung", "ACheung@gmail.com");
 
-
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
                 var selectedTeacher = db.Teachers.Where(t => t.TeacherId == 5).FirstOrDefault();
                 Thread.Sleep(2000);
                 Assert.AreEqual("Alice", selectedTeacher.FirstName);

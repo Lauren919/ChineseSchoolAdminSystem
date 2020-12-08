@@ -18,7 +18,7 @@ namespace ChineseSchoolAdminSystemTests
             {
                 var selectedStudent =
                 from c in db.Students
-                where c.FirstName == "Lauren"
+                where c.StudentId == 7
                 select c;
 
 
@@ -38,7 +38,7 @@ namespace ChineseSchoolAdminSystemTests
             {
                 var selectedStudent =
                 from c in db.Students
-                where c.FirstName == "Lauren"
+                where c.StudentId == 7
                 select c;
 
 
@@ -90,7 +90,7 @@ namespace ChineseSchoolAdminSystemTests
         [Test]
         public void CheckAllInformationIsCorrectedWhenStudentInformationIsEdited()
         {
-            using (var db = new ChineseSchoolAdminSystemContext()) 
+            using (var db = new ChineseSchoolAdminSystemContext())
             {
                 var newStudent = new Student
                 {
@@ -107,10 +107,12 @@ namespace ChineseSchoolAdminSystemTests
 
                 db.Students.Add(newStudent);
                 db.SaveChanges();
+            }
 
-                _crudManager.EditStudent(7, "Lauren", "Chu", 20, "Nuts", "Tony Chu", "07789778899", "TChu@email.com", 5);
+            _crudManager.EditStudent(7, "Lauren", "Chu", 20, "Nuts", "Tony Chu", "07789778899", "TChu@email.com", 5);
 
-
+            using (var db = new ChineseSchoolAdminSystemContext())
+            {
                 var selectedStudent = db.Students.Where(s => s.StudentId == 7).FirstOrDefault();
                 Thread.Sleep(2000);
                 Assert.AreEqual("Lauren", selectedStudent.FirstName);
@@ -119,10 +121,10 @@ namespace ChineseSchoolAdminSystemTests
                 Assert.AreEqual("Nuts", selectedStudent.Allergies);
                 Assert.AreEqual("Tony Chu", selectedStudent.ParentName);
                 Assert.AreEqual("07789778899", selectedStudent.ParentContactNumber);
-                Assert.AreEqual("TChu@gmail.com", selectedStudent.ParentEmail);
+                Assert.AreEqual("TChu@email.com", selectedStudent.ParentEmail);
                 Assert.AreEqual(5, selectedStudent.ClassId);
-
-            }
+            }           
+            
         }
 
         [Test]
