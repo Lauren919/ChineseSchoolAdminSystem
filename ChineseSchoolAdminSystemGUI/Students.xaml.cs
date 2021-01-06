@@ -34,46 +34,18 @@ namespace ChineseSchoolAdminSystemGUI
 
         private void ClassListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-            if (ClassListBox.SelectedItem.ToString() == "Mandarin-Beginner")
-            {
-                _crudManager.SetSelectedClass(ClassListBox.SelectedItem);
-                StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinMandarinBeginner();
-            }
-            else if (ClassListBox.SelectedItem.ToString() == "Mandarin-Intermediate")
-            {
-                _crudManager.SetSelectedClass(ClassListBox.SelectedItem);
-                StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinMandarinIntermediate();
-            }
-            else if (ClassListBox.SelectedItem.ToString() == "Mandarin-Advanced")
-            {
-                _crudManager.SetSelectedClass(ClassListBox.SelectedItem);
-                StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinMandarinAdvance();
-            }
-            else if (ClassListBox.SelectedItem.ToString() == "Cantonese-Beginner")
-            {
-                _crudManager.SetSelectedClass(ClassListBox.SelectedItem);
-                StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinCantoneseBeginner();
-            }
-            else if (ClassListBox.SelectedItem.ToString() == "Cantonese-Intermediate")
-            {
-                _crudManager.SetSelectedClass(ClassListBox.SelectedItem);
-                StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinCantoneseIntermediate();
-            }
-            else if (ClassListBox.SelectedItem.ToString() == "Cantonese-Advanced")
-            {
-                _crudManager.SetSelectedClass(ClassListBox.SelectedItem);
-                StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinCantoneseAdvance();
-            }
+            _crudManager.SelectedClass = _crudManager.GetClass(ClassListBox.SelectedItem.ToString());
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents(_crudManager.SelectedClass.ClassName);
         }
 
         public void PopulateStudentListBox()
         {
-            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinMandarinBeginner();
-            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinMandarinIntermediate();
-            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinMandarinAdvance();
-            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinCantoneseBeginner();
-            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinCantoneseIntermediate();
-            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudentsinCantoneseAdvance();
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents("Mandarin-Beginner");
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents("Mandarin-Intermediate");
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents("Mandarin-Advanced");
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents("Cantonese-Beginner");
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents("Cantonese-Intermediate");
+            StudentListBox.ItemsSource = _crudManager.RetrieveAllStudents("Cantonese-Advanced");
         }
 
         private void StudentListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
